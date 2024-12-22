@@ -1,4 +1,4 @@
-OBJS = main.cpp
+OBJS = first.cpp second.cpp
 
 OBJ_NAME = main
 
