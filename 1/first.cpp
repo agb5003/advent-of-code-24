@@ -25,12 +25,13 @@ int main() {
         // CAREFUL: The second index in substr is the stop index, which is NOT included.
         std::string numstring = inputLine.substr(0,5); 
         int num = std::stoi(numstring);
-        std::cout << parseSwitcher << std::endl;
         switch (parseSwitcher) {
             case true:
                 list1.push_back(num);
+                break;
             case false:
                 list2.push_back(num);
+                break;
         }
         parseSwitcher = !parseSwitcher; // Reverse polarity of parseSwitcher for next entry
     }
